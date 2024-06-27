@@ -1,6 +1,6 @@
 Feature: verify chatbot functionality
 
-  @test
+  @sanity
   Scenario: User should be able to maximize chat screen after clicking on maximizer.
     When Click on maximizer
     Then Minimizer should be displayed
@@ -60,7 +60,7 @@ Feature: verify chatbot functionality
    And Select physical safety
    Then Physical safety page should be open
    
-    @sanity
+   
    Scenario: Request access form functionality
    When Click on investor area
    And Fill all required field

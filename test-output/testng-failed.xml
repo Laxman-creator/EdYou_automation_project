@@ -6,10 +6,8 @@
       <class name="cucumber.options.testRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="setup"/>
-          <include name="teardown"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="runScenario" invocation-numbers="4 5 6"/>
         </methods>
       </class> <!-- cucumber.options.testRunner -->
     </classes>

@@ -10,14 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.xml.sax.Locator;
 
-import com.aventstack.extentreports.Status;
 
 import helper.baseClass;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import utilities.ExtentReportUtility;
+
+
 
 @Test
 public class homePage extends baseClass {
@@ -34,7 +31,7 @@ public class homePage extends baseClass {
         explicitWait(elm, "visibilityof");
 		clickElement(elm);
       
-        ExtentReportUtility.test.get().log(Status.INFO, "Maximizer clicked and video displayed");
+       
 
 	        } 
 		
@@ -45,7 +42,7 @@ public class homePage extends baseClass {
 		explicitWait(elm, "visibilityof");
 		Boolean bool = elm.isDisplayed();
 		assertEquals(true, bool);
-		 ExtentReportUtility.test.get().log(Status.INFO, "Maximizer is displayed");
+		 
 	}
 
 	 @Test
